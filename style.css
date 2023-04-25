@@ -1,96 +1,275 @@
 /* GLOBAL SETTING */
-*{
-    margin: 0;
-    padding: 0;
-  }
+/* GLOBAL SETTING */
 
-  @font-face {
-    font-family: "e-Ukraine-Regular"; 
-    src: url("././fonts/e-Ukraine-Regular.eot"),
-    url("./fonts/e-Ukraine-Regular.woff") format("woff"), 
-    url("./fonts/e-Ukraine-Regular.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-    }
+* {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+@font-face {
+  font-family: "e-Ukraine-Regular";
+  src: url("././fonts/e-Ukraine-Regular.eot"),
+    url("./fonts/e-Ukraine-Regular.woff") format("woff"),
+    url("./fonts/e-Ukraine-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+section {
+  margin: 30px 0;
+}
+section:last-child {
+    margin: 10px;
+  }
+/* GLOBAL SETTING */
 /* GLOBAL SETTING */
 
 /* BODY SETTING */
+/* BODY SETTING */
 
-  body {
-    background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%)  no-repeat;
-      /* background: -webkit-linear-gradient(90deg, #efbdda, #a4d1fe);
-  background: linear-gradient(90deg, #efbdda, #a4d1fe); */
-    padding: 20px;
-    font-family: 'e-Ukraine-Regular';
-    color: #fff;
-  }
+body {
+  background: #fff;
+  font-family: "e-Ukraine-Regular";
+  color: #000000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* BODY SETTING */
 /* BODY SETTING */
 
 /* HEADER SETTING */
-  .container {
-    max-width: 1197px;
-    margin: 0 auto;
+/* HEADER SETTING */
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo img {
+  height: 50px;
+}
+.header__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__item {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.header__item a:hover {
+  color: rgb(178, 178, 178);
+}
+
+.header__btn {
+  background-color: #ffffff;
+  border-radius: 25px;
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* HEADER SETTING */
+/* HEADER SETTING */
+
+/* START SETTING */
+/* START SETTING */
+.start {
+  background-image: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 50.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  background-size: 150vw 150vh;
+  animation: 15s linear 0s infinite alternate none running granimate;
+}
+.start__block img {
+  height: 100px;
+}
+.start__block {
+    padding: 50px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.emojii {
+  line-height: 250%;
+  font-size: 50px;
+}
+/* START SETTING */
+/* START SETTING */
+
+/* BANNER SETTING */
+/* BANNER SETTING */
+
+.banner__items img {
+  display: block;
+  max-width: 100%;
+}
+
+.banner__content {
+  border: 2px solid;
+  border-image: radial-gradient(
+      92.76% 76.25% at 7.24% 21%,
+      #b5d39d 0%,
+      #f1acac 25.66%,
+      #bf98c6 54.47%,
+      #7179ef 86.04%,
+      #2833d0 100%
+    )
+    1;
+}
+
+/* BANNER SETTING */
+/* BANNER SETTING */
+
+/* BUSINESS SETTING */
+/* BUSINESS SETTING */
+
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+}
+
+.nav__list {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.nav__list a:hover {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #000000;
+}
+
+.list__business-header {
+  margin: 20px 0 20px 0;
+  text-decoration: underline;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 300px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.product button:last-child {
+  margin-top: auto;
+}
+
+.product img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.product h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 15px;
+  word-wrap: break-word;
+  margin-bottom: 25px;
+}
+
+.product button {
+  background-color: #000000;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn__business {
+    background-color: #000000;
+  color: #ffffff;
+  padding: 20px 40px;
+  font-size: 1rem;
+  border: 1px solid black;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+/* BUSINESS SETTING */
+/* BUSINESS SETTING */
+
+
+
+
+
+
+
+
+
+
+/* FOOTER SETTING */
+/* FOOTER SETTING */
+
+.footer {
+    background: #000000;
+    color: #ffffff;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 10px;
+}
+.footer__nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 15px 110px 15px ;
-  
-  }
-  
-  .header__logo {
-    display: block;
-    object-fit: contain;
-    width: 50px;
-    height: 50px;
-  }
-  
-  .header__list {
-    display: flex;
+}
+
+.nav__about_us {
+    max-width: 30%;
+}
+
+.nav__footer_list {
     list-style-type: none;
-    gap: 40px;
-  }
-  
-  .header__link {
-    color: #fff;
-    text-decoration: none;
-  }
+    margin: 0;
+    padding: 0;
+}
 
-  .header__item {
-    padding: 10px 20px;
-
-  }
-
-  .header__item:hover {
-    background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
-    border-radius: 10px;  
-  }
-
-  .header__link_gradient {
-    background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
-    border-radius: 10px;
-    padding: 10px 20px;
-  }
-  
-
-  .header__item_gradient {
-    padding: 10px 20px;
-  }
-  
-  .form__input {
-    width: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    border: none;
-    padding: 10px 10px 10px 10px;
-    color: #fff;
-  }
-  
-  .form__input:focus {
-    outline: none;
-  }
-  
-  .form__input::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  
-  /* HEADER SETTING */
+/* FOOTER SETTING */
+/* FOOTER SETTING */
